@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h3>Isi Data Terlebih dahulu</h3>
+<form action="" method="get">
+    <div class="mb-3">
+        <label for="InputName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="InputName" name="name" placeholder="Name....">
+    </div>
+    <div class="mb-3">
+        <label for="InputEmail" class="form-label">Email</label>
+        <input type="text" class="form-control" id="InputEmail" name="email" placeholder="Email....">
+    </div>
+    <div class="mb-3">
+        <label for="InputPhone" class="form-label">Phone</label>
+        <input type="text" class="form-control" id="InputPhone" name="phone" placeholder="Phone....">
+    </div>
+    <button type="submit" class="btn btn-dark">Submit</button>
+</form>
+
+<h2 class="mt-5">Bank List</h2>
+<li>@ViewData["message"]</li>
+<li>@ViewData["mail"]</li>
+<li>@ViewData["phone"]</li>
+
